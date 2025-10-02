@@ -9,7 +9,10 @@ for(lag in 1:lag1){
     # y[i] = x[i] + rnorm(1,0,0.001) # simulation 4
     y[i] = x[i]^2 + sin(x[i]) + rnorm(1,0,0.001) # simulation 5
   }
+
   x = x[(lag+1):(lag+l)]
+  y = y[(lag+1):(lag+l)]
+
   for (i in 1:8) {
     te2[lag, i] = transent(y, x, i)
   }
