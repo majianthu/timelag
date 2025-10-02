@@ -22,7 +22,7 @@ points(te2[3,],col=3,pch=5);lines(te2[3,],col=3)
 points(te2[4,],col=4,pch=22);lines(te2[4,],col=4)
 legend(7,max(te2),legend = c("l=1","l=2","l=3","l=4"),col = 1:4,pch = c(1,2,5,22))
 
-x11(width = 15, height = 5)
+x11(width = 15, height = 4.5)
 plot(x, xlab = "i", ylab = "X,Y", ylim = c(min(x,y),max(x,y)), col = 2, pch = 1); lines(x,col=2)
 points(y, col = 3, pch = 20); lines(y,col=3)
 legend(-15, max(x,y), legend = c("X","Y"), col = c(2,3), pch = c(1,20))
