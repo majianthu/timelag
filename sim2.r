@@ -6,7 +6,7 @@ for(lag in 1:lag1){
   y = x = rnorm(l+lag,0,0.1)
   for(i in (lag+1):(lag+l)) {
     x[i] = rnorm(1, 0, 0.1) + alpha * x[i-1] + beta * x[i - lag] # simulation 4,5
-    # y[i] = x[i] + rnorm(1,0,0.001) # simulation 4
+    # y[i] = x[i] + rnorm(1,0,0.01) # simulation 4
     y[i] = x[i]^2 + sin(x[i]) + rnorm(1,0,0.001) # simulation 5
   }
 

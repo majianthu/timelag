@@ -6,9 +6,9 @@ for(lag in 1:lag1){
   x = rep(0,l+lag)
   y = rep(0,l+lag)
   for(i in 1:l) {
-    # x[i + 1] = rnorm(1, 0, 0.001) # simulation 1
-    # x[i + 1] = rnorm(1, 0, 0.001) + sin(2 * pi * i / l) # simulation 2
-    x[i + 1] = rnorm(1, 0, 0.001) + x[i] # simulation 3
+    # x[i + 1] = rnorm(1, 0, 0.1) # simulation 1
+    # x[i + 1] = rnorm(1, 0, 0.1) + sin(2 * pi * i / l) # simulation 2
+    x[i + 1] = rnorm(1, 0, 0.1) + x[i] # simulation 3
     y[i + lag + 1] = x[i + 1] + rnorm(1, 0, 0.001)
   }
   x = x[1:l]
