@@ -3,8 +3,7 @@ library(copent)
 l = 500; lag1 = 4
 te2 = matrix(0,lag1,8)
 for(lag in 1:lag1){
-  x = rep(0,l+lag)
-  y = rep(0,l+lag)
+  y = x = rep(0,l+lag)
   for(i in 1:l) {
     # x[i + 1] = rnorm(1, 0, 0.1) # simulation 1
     # x[i + 1] = rnorm(1, 0, 0.1) + sin(2 * pi * i / l) # simulation 2
